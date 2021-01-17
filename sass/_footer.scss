@@ -1,0 +1,18 @@
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2em;
+    .social{
+        margin: 1em 0;
+        .contenedor{
+            a{
+                padding: 0 1em;
+                i{
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}

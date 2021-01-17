@@ -1,0 +1,33 @@
+.navegador {
+  background-color: $negro;
+  height: 100px;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 1.6em;
+    list-style: none;
+  }
+
+  li {
+    padding-left: 1em;
+    a {
+      color: $blanco;
+      text-decoration: none;
+    }
+  }
+  li {
+    padding-bottom: 1px;
+    a:hover {
+      color: $azulPastel;
+      text-decoration: underline;
+      list-style: none;
+    }
+  }
+}
+
+.linea {
+  background-color: $azulPastel;
+  width: 100%;
+  height: 2px;
+}

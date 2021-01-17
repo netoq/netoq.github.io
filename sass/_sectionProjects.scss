@@ -1,0 +1,39 @@
+.projects {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: $gris;
+  padding-top: 3em;
+  .contenedor {
+    width: 100%;
+    .titulo {
+      @include titulo;
+    }
+    .contenedor-trabajos {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      margin: 0 10%;
+      flex-wrap: wrap;
+      .trabajo {
+        margin: 3em;
+        padding: 2em;
+        .thumb {
+          img {
+            border-radius: 1em;
+            height: 22em;
+            padding: 0.2em;
+            box-shadow: 0.5px 0.5px 2px black;
+          }
+        }
+        .descripcion {
+          font-size: 1.5em;
+          margin-top: 1em;
+          font-weight: 600;
+          color: $azulPastel;
+          text-shadow: 1px 1px black;
+        }
+      }
+    }
+  }
+}

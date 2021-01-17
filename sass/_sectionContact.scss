@@ -1,0 +1,58 @@
+.contact {
+  padding: 3em 0 6em;
+  display: flex;
+  justify-content: center;
+  background-color: $gris;
+
+  .contenedor{
+    width: 42%;
+  }
+  .titulo {
+    @include titulo;  
+  }
+  .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 2px solid #cecece;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: $grisOscuro;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border: 2px solid $azulPastel;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 49%;
+      margin-bottom: 2em;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100px;
+      max-height: 300px;
+      margin-bottom: 2em;
+    }
+    .boton {
+      margin: auto;
+      background: #3895ea;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 15px 40px;
+      cursor: pointer;
+    }
+    .boton:hover {
+      background: #387bea;
+    }
+  }
+}

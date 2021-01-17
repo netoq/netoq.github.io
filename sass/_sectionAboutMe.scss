@@ -1,0 +1,17 @@
+
+.aboutMe {
+  text-align: center;
+  background-color: $blanco;
+
+}
+.sectionAboutMe {
+  width: 50%;
+  padding: 5em 10em 12em;
+  margin: 0 25%;
+  h2{
+    @include titulo;    
+  }
+  p{
+      font-size: 1.5em;
+  }
+}

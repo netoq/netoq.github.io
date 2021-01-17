@@ -1,0 +1,49 @@
+@mixin tecnologia {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 50%;
+    box-shadow: 1px 1px 4px grey;
+    margin-top: 2em;
+    border-radius: 5%;
+    opacity: 30%;
+  }
+  img:hover {
+    transition: ease-in;
+    opacity: 100%;
+    transform: scale(1.3);
+    transition-duration: 250ms; 
+  }
+}
+
+.programas {
+  padding-top: 3em;
+  .titulo {
+    @include titulo;  
+  }
+  .lenguage {
+    flex-wrap: wrap;
+    display: flex;
+    width: 80%;
+    margin: 5% 10%;
+    justify-content: center;
+    .tecnologia1,
+    .tecnologia2,
+    .tecnologia3,
+    .tecnologia4,
+    .tecnologia5,
+    .tecnologia6,
+    .tecnologia7,
+    .tecnologia8,
+    .tecnologia9,
+    .tecnologia10,
+    .tecnologia11,
+    .tecnologia12,
+    .tecnologia13,
+    .tecnologia14,
+    .tecnologia15,
+    .tecnologia16 {
+      @include tecnologia;
+    }
+  }
+}
