@@ -2,42 +2,6 @@
   padding: 0;
   margin: 0; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  display: flex;
-  justify-content: center;
-  font-family: cursive;
-  height: 1200px;
-  max-height: 100%;
-  align-items: center; }
-  body .portadaInicio video {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 30%;
-    left: 30%;
-    transform: translateX(-30%) translateY(-30%);
-    z-index: -1; }
-  body main {
-    background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 0.5em;
-    height: 20%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    body main h1 {
-      color: white;
-      padding: 1.2em;
-      margin: 5%;
-      text-align: center; }
-    body main button {
-      width: 50%;
-      margin: 0 25%; }
-
 .navegador {
   background-color: black;
   height: 100px; }
