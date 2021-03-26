@@ -1,36 +1,30 @@
 .background-image {
   img{
-      /* position: sticky; */
     position: absolute;
     width: 30%;
-    /* height: 97%; */
     margin: 18em;
   }
   .contenedor-texto {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.952),
-        $violetaOscuro
-      );
-      //url(../assets/img/background.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.952), #0e032b);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 1300px;
+    height: 1090px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: center ;
+    padding: 3em 10em 0 0;
   }
   .texto {
     text-align: center;
     color: white;
-    border: 1px solid white;
-    width: 22%;
-    height: 22%;
-    background-color: $blancoTransparente;
-    padding-top: 5em;
+    align-self: center;
+    width: 20%;
+    height: 23%;
+    background-color: rgba(255, 255, 255, 0.115);
+    padding-top: 4em;
     text-shadow: 1px 2px 0 black;
-    border-radius: 10px;
+    border-radius: 42px;
   }
   
 }

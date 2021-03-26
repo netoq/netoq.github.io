@@ -1,17 +1,37 @@
-
 .aboutMe {
   text-align: center;
   background-color: $blanco;
 
+  .top-land {
+    display: flex;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.952),
+      $violetaOscuro
+    );
+    background-color: transparent;
+    .land-left {
+      width: 42%;
+    }
+      .land {
+      display: flex;
+      width: 45%;
+      margin-left: 22em;
+      height: 13em;
+      border-radius: 100% 0 0 0;
+      background-color: white;
+    }
+  }
 }
+
 .sectionAboutMe {
   width: 50%;
   padding: 5em 10em 12em;
   margin: 0 25%;
-  h2{
-    @include titulo;    
+  h2 {
+    @include titulo;
   }
-  p{
-      font-size: 1.5em;
+  p {
+    font-size: 1.5em;
   }
 }
