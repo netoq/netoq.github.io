@@ -1,26 +1,36 @@
-.contenedor-texto {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(../assets/img/otherside.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.texto {
-  text-align: center;
-  color: white;
-  border: 1px solid white;
-  width: 22%;
-  height: 22%;
-  background-color: $blancoTransparente;
-  padding-top: 5em;
-  text-shadow: 1px 2px 0 black;
-  border-radius: 10px;
+.background-image {
+  img{
+      /* position: sticky; */
+    position: absolute;
+    width: 30%;
+    /* height: 97%; */
+    margin: 18em;
+  }
+  .contenedor-texto {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.952),
+        $violetaOscuro
+      );
+      //url(../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    width: 22%;
+    height: 22%;
+    background-color: $blancoTransparente;
+    padding-top: 5em;
+    text-shadow: 1px 2px 0 black;
+    border-radius: 10px;
+  }
+  
 }

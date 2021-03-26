@@ -14,39 +14,36 @@ html, body {
 
 .navegador {
   background-color: black;
-  height: 100px;
   position: fixed;
   width: 100%; }
   .navegador ul {
     display: flex;
     justify-content: flex-end;
     padding: 1em;
-    font-size: 1.6em;
+    list-style: none;
+    margin: 0; }
+  .navegador ul:hover {
+    color: #13af28; }
+  .navegador a {
+    text-decoration: none; }
+  .navegador a:hover {
     list-style: none; }
-  .navegador li {
-    padding-left: 1em;
+  .navegador .draw-border {
     background: none;
     border: none;
     cursor: pointer;
     line-height: 1.5;
     font: 700 1.2rem 'Roboto Slab', sans-serif;
-    padding: 1em 2em;
     letter-spacing: 0.05rem;
-    padding-bottom: 1px; }
-    .navegador li a {
-      color: white;
-      text-decoration: none; }
-    .navegador li a:hover {
-      list-style: none; }
-    .navegador li .btn:focus {
-      outline: 2px dotted #55d7dc; }
-  .navegador .draw-border {
-    box-shadow: inset 0 0 0 4px #3895ea;
-    color: #3895ea;
+    padding-bottom: 1px;
+    box-shadow: none;
+    color: white;
     -webkit-transition: color 0.25s 0.0833333333s;
     transition: color 0.25s 0.0833333333s;
     position: relative;
-    padding: 0 1em; }
+    padding: 1em 1em; }
+    .navegador .draw-border .btn:focus {
+      outline: 2px dotted #55d7dc; }
   .navegador .draw-border::before, .navegador .draw-border::after {
     border: 0 solid transparent;
     box-sizing: border-box;
@@ -58,9 +55,10 @@ html, body {
     bottom: 0;
     right: 0; }
   .navegador .draw-border:hover {
-    color: #13af28; }
-  .navegador .draw-border:hover::before, .navegador .draw-border:hover::after, .navegador li > a:hover {
-    border-color: #1ac553;
+    color: #5900ff;
+    box-shadow: inset 0 0 0 4px hidden; }
+  .navegador .draw-border:hover::before, .navegador .draw-border:hover::after {
+    border-color: #5900ff;
     -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
@@ -78,17 +76,22 @@ html, body {
     -webkit-transition-delay: 0s, 0.25s, 0s;
     transition-delay: 0s, 0.25s, 0s; }
 
-.contenedor-texto {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../assets/img/otherside.jpg);
+.background-image img {
+  /* position: sticky; */
+  position: absolute;
+  width: 30%;
+  /* height: 97%; */
+  margin: 18em; }
+.background-image .contenedor-texto {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.952), #0e032b);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 1200px;
+  height: 1300px;
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.texto {
+.background-image .texto {
   text-align: center;
   color: white;
   border: 1px solid white;
