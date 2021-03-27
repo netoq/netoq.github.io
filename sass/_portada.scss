@@ -5,7 +5,11 @@
     margin: 4em 0 0 45.5em;
   }
   .contenedor-texto {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.952), $violetaOscuro);
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.952),
+      $violetaOscuro
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,16 +27,11 @@
       margin-top: 29em;
     }
   }
-
   .texto {
+    p {
+      font-size: 4rem;
+    }
     text-align: center;
     color: white;
-    align-self: center;
-    width: 20%;
-    height: 23%;
-    background-color: rgba(255, 255, 255, 0.115);
-    padding-top: 4em;
-    text-shadow: 1px 2px 0 black;
-    border-radius: 42px;
   }
 }
