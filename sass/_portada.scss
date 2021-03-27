@@ -1,20 +1,29 @@
 .background-image {
-  img{
+  .world {
     position: absolute;
-    width: 30%;
-    margin: 18em;
+    width: 42%;
+    margin: 4em 0 0 45.5em;
   }
   .contenedor-texto {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.952), #0e032b);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.952), $violetaOscuro);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 1090px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding: 3em 10em 0 0;
+
+    .alien {
+      width: 32%;
+      position: relative;
+      overflow: auto;
+      margin-top: 29em;
+    }
   }
+
   .texto {
     text-align: center;
     color: white;
@@ -26,5 +35,4 @@
     text-shadow: 1px 2px 0 black;
     border-radius: 42px;
   }
-  
 }
