@@ -2,21 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style1.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="js\app.js"></script>
+    <script src="https://kit.fontawesome.com/c178af35d7.js" crossorigin="anonymous"></script>
+
+
     <title>Document</title>
 </head>
 
 <body>
-    <div class="portadaInicio">
-        <video src="assets/video/video.mp4" autoplay loop></video>
-    </div>
-    <main>
-        <h1 class="saludoInicio" id="js-textoInicio">welcome to my portfolio!</h1>
-        <button id="js-button"><a href="indexc.html">Enter</a></button>
-    </main>
-    </div>
+    <header class="header">
+        <div class="contenedor-nav">
+            <nav class="navegador">
+                <ul>
+                    <a href="#js-inicio">
+                        <li class="btn draw-border">Inicio</li>
+                    </a>
+                    <a href="#js-aboutMe">
+                        <li class="btn draw-border">About me</li>
+                    </a>
+                    <a href="#js-projects">
+                        <li class="btn draw-border">Projects</li>
+                    </a>
+                    <a href="#js-tecnology">
+                        <li class="btn draw-border">Tecnology</li>
+                    </a>
+                    <a href="#js-contact">
+                        <li class="btn draw-border">Contact</li>
+                    </a>
+                    <a href="#js-donwload">
+                        <li class="btn draw-border">Download</li>
+                    </a>
+                    <a href="#js-social">
+                        <li class="btn draw-border">Social</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="background-image">
+            <div class="contenedor-texto" id="js-inicio">
+                <img class="alien" src="assets\img\wizard2.png" alt="" srcset="">
+                <div class="texto">
+                    <p class="nombre">Ernesto Quintana Oliva</p>
+                    <h2 class="Profesion">Web Developer Jr.</h2>
+                    <p class="parrafo"> Tandil - Buenos Aires</p>
+                </div>
+                <img class="world" src="assets\img\bh2.png" alt="" srcset="">
+            </div>
+
+        </div>
+    </header>
+
+    <section class="aboutMe" id="js-aboutMe">
+        <div class="top-land" id="js-land">
+
+            <div class="land-area">
+                <div class="land"></div>
+            </div>
+            <div class="land-right-hidden"></div>
+        </div>
+        <div class="sectionAboutMe">
+            <h2 class="titulo">Acerca de mí</h2>
+            <p> Me llamo Ernesto Quintana, nací en Lima y vivo desde los 20 años en Tandil, ciudad que me encanta ya
+                que practico senderismo y running. Siempre fui amante de las computadores pero por cosas de la vida
+                me
+                dedique a trabajar.
+                Hace 1 año despúes de mucho pensar, me decidi a estudiar en La universidad Nacional del Centro ,
+                Tecnicatura en
+                desarrollo de aplicaciones web , tecnicatura que vengo haciendo actualmente.
+                Me considero una persona responsable ,comprometida con lo que hago, sociable, carismatico e
+                innovador, puntual , alegre y dinamico.
+                Gracias por tomarte el tiempo de leer este portafolio, espero que sea de tu agrado. </p>
+        </div>
+    </section>
+    <!-- <div class="imagen"><img src="assets\img\1y.jpg" alt="cyber eye"></div> -->
+    <section class="projects" id="js-projects">
+        <div class="contenedor">
+            <h3 class="titulo">Proyectos de practica</h3>
+            <div class="contenedor-trabajos">
+                <div class="trabajo">
+                    <div class="thumb">
+                        <a href=""><img src="assets/img/a.jpg" alt=""></a>
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Distribuidora ZaraQuin</p>
+                        <p class="categoria">PHP - API - MVC </p>
+                    </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                        <a href=""><img src="assets/img/b.jpg" alt=""></a>
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Vivir Consciente</p>
+                        <p class="categoria">HTML - CSS - JavaScript</p>
+                    </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                        <a href=""><img src="assets/img/c.jpg" alt=""></a>
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Pal Bailador.</p>
+                        <p class="categoria">Angular Practice</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects colaboration">
+                <h3 class="titulo">Paginas de colaboracion</h3>
+                <div class="contenedor-trabajos">
+                    <div class="colaboration">
+                        <div class="thumb">
+                            <a href="https://superocho.org/"><img src="assets/img/logo.png" alt=""></a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">SuperOcho</p>
+                        </div>
+                    </div>
+                    <div class="colaboration">
+                        <div class="thumb">
+                            <a href="https://babel.superocho.org/"><img src="assets/img/Babel_pingui.jpg" alt=""></a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Babel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="programas" id="js-tecnology">
+        <h2 class="titulo">Tecnologias</h2>
+        <div class="lenguage">
+            <div class="tecnologia1"><img src="assets/img/logos/html.jpg" alt="HTML"></div>
+            <div class="tecnologia2"><img src="assets/img/logos/css.jpg" alt="css"></div>
+            <div class="tecnologia3"><img src="assets/img/logos/js.jpg" alt="JavaScript"></div>
+            <div class="tecnologia4"><img src="assets/img/logos/ajax.jpg" alt="ajax"></div>
+            <div class="tecnologia5"><img src="assets/img/logos/vue.jpg" alt="vue"></div>
+            <div class="tecnologia6"><img src="assets/img/logos/api.jpg" alt="api"></div>
+            <div class="tecnologia7"><img src="assets/img/logos/angular.jpg" alt="Angular"></div>
+            <div class="tecnologia8"><img src="assets/img/logos/php.jpg" alt="php"></div>
+            <div class="tecnologia9"><img src="assets/img/logos/mysql.jpg" alt="mysql"></div>
+            <div class="tecnologia10"><img src="assets/img/logos/sass.jpg" alt="sass"></div>
+            <div class="tecnologia11"><img src="assets/img/logos/git.jpg" alt="git"></div>
+            <div class="tecnologia12"><img src="assets/img/logos/github.jpg" alt="github"></div>
+            <div class="tecnologia13"><img src="assets/img/logos/java.jpg" alt="java"></div>
+            <div class="tecnologia14"><img src="assets/img/logos/afterEfect.jpg" alt="afterEfect"></div>
+            <div class="tecnologia15"><img src="assets/img/logos/ps.jpg" alt="photoshop"></div>
+            <div class="tecnologia16"><img src="assets/img/logos/afterEffect.jpg" alt="solidWorks"></div>
+        </div>
+
+    </section>
+    <section class="contact" id="js-contact">
+        <div class="contenedor">
+            <h3 class="titulo">Contacto</h3>
+            <form class="formulario" action="">
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" required maxlength="20" minlength="5">
+                <input type="email" placeholder="Correo" name="correo" id="correo" required>
+
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar" class="boton">
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <section class="social" id="js-social">
+            <div class="contenedor">
+                <a href="https://www.linkedin.com/in/ernestoquintana108/" target="_blank" class="twitter"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/ernesto.quintanaoliva" target="_blank" class="facebook"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a href="https://web.telegram.org/@netoQuintana" target="_blank" class="Telegram"><i
+                        class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/netoquintana/" target="_blank" class="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://github.com/netoq" target="_blank" class="github"><i
+                        class="fab fa-github-square"></i></a>
+            </div>
+        </section>
+        <div class="derechos">
+            <h2>Developer Web - Ernesto Quintana</h2>
+            <p>© 2021 Portafolio - Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>
