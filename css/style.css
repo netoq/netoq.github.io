@@ -104,7 +104,9 @@ html, body {
     font-size: 4rem; }
 
 .portMain {
-  background-color: #fd0000; }
+  background-color: #fd0000;
+  width: 80%;
+  margin: 0 10%; }
 
 .aboutMe {
   text-align: center;
