@@ -4,11 +4,11 @@
   justify-content: center;
   background-color: $gris;
 
-  .contenedor{
+  .contenedor {
     width: 42%;
   }
   .titulo {
-    @include titulo;  
+    @include titulo;
   }
   .formulario {
     display: flex;

@@ -103,6 +103,9 @@ html, body {
   .background-image .texto .nombre {
     font-size: 4rem; }
 
+.portMain {
+  background-color: #fd0000; }
+
 .aboutMe {
   text-align: center;
   background-color: white; }
